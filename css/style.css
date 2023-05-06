@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap');
+
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  font-weight: 400;
+  src: url('../fonts/RoundedMplus1c-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  font-weight: 800;
+  src: url('../fonts/RoundedMplus1c-ExtraBold.woff2') format('woff2');
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Rounded Mplus 1c', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  margin-top: -2px;
+  animation: logoScale 5s ease-in-out infinite;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+}
+
+.header-item {
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 3px 13px;
+  transition: border-color .3s;
+}
+
+.header-item:hover {
+  border-color: #FFFFFF;
+  transition: border-color .3s;
+}
+
+.section-1 {
+  position: relative;
+  /* background: linear-gradient(0deg, #FFFFFF 16.96%, rgba(255, 255, 255, 0) 65.18%), #44D6FF; */
+  background: linear-gradient(0deg, #0090ff8a 16.96%, rgba(255, 255, 255, 0) 65.18%), #44D6FF;
+  overflow-x: hidden;
+
+}
+
+.info {
+  max-width: 500px;
+  margin-top: 240px;
+  margin-bottom: 500px;
+  position: relative;
+  z-index: 55;
+
+}
+
+.info-title {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 60px;
+
+}
+
+.info-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 13px 0 22px;
+}
+
+.info-btn {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding: 8px 27px 16px 29px;
+  background-image: url(../img/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info-btn:active {
+  background-image: url(../img/buttonclick.svg);
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.grass-bg {
+  position: relative;
+  z-index: 10;
+}
+
+.grass-bg img {
+  width: 100%;
+}
+
+.grass {
+  position: absolute;
+  z-index: -2;
+  top: 30%;
+  left: -25px;
+  right: -45px;
+  transform: translateY(-100%);
+  animation: grassMov 10s ease-in-out infinite;
+}
+
+.grass img {
+  width: 100%;
+}
+
+.tree-1 {
+  position: absolute;
+  width: 23%;
+  max-width: 338px;
+  top: 7%;
+  left: 5%;
+  transform: translateY(-100%) rotate(-3deg);
+  transform-origin: bottom center;
+  z-index: -3;
+  animation: treesMov 7s ease-in-out infinite;
+}
+
+.tree-2 {
+  position: absolute;
+  width: 25%;
+  max-width: 398px;
+  top: 20%;
+  right: 5%;
+  transform: translateY(-100%) rotate(-3deg);
+  transform-origin: bottom center;
+  z-index: -1;
+  animation: treesMov 6s ease-in-out infinite;
+}
+
+.cloud-1 {
+  position: absolute;
+  width: 34%;
+  top: -400px;
+  left: 5%;
+  transform: translateY(-100%);
+  animation: cloudMov-1 100s ease-in-out infinite;
+}
+
+.cloud-2 {
+  position: absolute;
+  width: 45%;
+  top: -200px;
+  right: 15%;
+  transform: translateY(-100%);
+  animation: cloudMov-2 100s ease-in-out infinite;
+}
+
+.heroes {
+  position: absolute;
+  z-index: 11;
+  bottom: 50%;
+  right: 9%;
+  left: 40%;
+}
+
+.heroes-img {
+  max-width: 900px;
+  width: 100%;
+}
+
+.heroes-elements {
+  position: relative;
+  max-width: 900px;
+}
+
+.baloon {
+  position: absolute;
+  width: 17%;
+  right: -13.5%;
+  top: 15%;
+  transform-origin: 10% 98%;
+  animation: baloonMov 3s ease-in-out infinite;
+}
+
+.winder {
+  position: absolute;
+  top: 38%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 11%;
+  animation: winderRotate 10s linear infinite;
+}
+
+/* ---------------section-2---------------------- */
+
+.section-2 {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 100px;
+  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 94.22%), #FFF6EE;
+}
+
+.sect-2-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  transform: translateY(-75%);
+}
+
+.sect-2-title {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 17px 42px 115px;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: center;
+  color: #D07CC6;
+  background-image: url(../img/sect-2-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sect-2-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sect-2-wrap-block {
+  transition: 500ms
+}
+
+.sect-2-wrap-block:not(.active) {
+  transform: translateY(20%);
+  opacity: 0;
+}
+
+.sect-2-wrap-block:first-child{
+
+}
+.sect-2-wrap-block:nth-child(2){
+  transition-delay: 200ms;
+}
+.sect-2-wrap-block:last-child{
+  transition-delay: 400ms;
+}
+
+.sect-2-wrap-block:first-child,
+.sect-2-wrap-block:last-child {
+  max-width: 300px;
+}
+
+.sect-2-wrap-block:nth-child(2) {
+  max-width: 370px;
+}
+
+.sect-2-wrap-block-title {
+  margin: 18px 0;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+  color: #D07CC6;
+}
+
+.sect-2-wrap-block-text {
+  text-align: center;
+  color: #D07CC6;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes logoScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grassMov {
+  0% {
+    left: -25px;
+    right: -45px;
+  }
+
+  50% {
+    left: -40px;
+    right: -40px;
+  }
+
+  100% {
+    left: -25px;
+    right: -45px;
+  }
+}
+
+@keyframes treesMov {
+  0% {
+    transform: translateY(-100%) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-100%) rotate(3deg);
+  }
+
+  100% {
+    transform: translateY(-100%) rotate(-3deg);
+  }
+}
+
+
+@keyframes cloudMov-1 {
+  0% {
+    left: 5%;
+  }
+
+  50% {
+    left: 60%;
+  }
+
+  100% {
+    left: 5%;
+  }
+}
+
+
+@keyframes cloudMov-2 {
+  0% {
+    right: 15%;
+  }
+
+  35% {
+    right: -15%;
+  }
+
+  75% {
+    right: 45%;
+  }
+
+  100% {
+    right: 15%;
+  }
+}
+
+
+@keyframes winderRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes baloonMov {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
