@@ -573,9 +573,25 @@ body {
   color: #FF5F4E;
 }
 
+
+/* ---------------section-4---------------------- */
+
 .section-4{
   background: #FFEBDA;
 }
+
+.slider{
+  display: flex;
+}
+
+.inner-block-1 {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 7.73%, rgba(255, 255, 255, 0) 62.96%), #44D6FF;
+}
+
+
+
+
+
 
 @keyframes logoScale {
   0% {
