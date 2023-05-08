@@ -154,3 +154,9 @@ function rollNextProduct(){
   currentBtn.classList.remove('btn-active');
   nextBtn.classList.add('btn-active');
 }
+
+// ---------------section-6----------------------
+
+pearSpeechBtn.onclick = () => {
+  speech.play()
+}

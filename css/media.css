@@ -278,7 +278,7 @@
   }
 
   .in-bl-2-wrapper-content-1 {
-    height: 300px;
+    height: 280px;
   }
 
   img.product {
@@ -374,11 +374,13 @@
 
   .inner-block-2 {
     padding: 10px 10px 10px 20px;
+    height: 100%;
   }
 
   .in-bl-2-title {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
   }
 
   .in-bl-2-btn {
@@ -390,6 +392,7 @@
   .in-bl-2-subtitle {
     font-size: 13px;
     line-height: 22px;
+    margin-bottom: 5px;
   }
 }
 
