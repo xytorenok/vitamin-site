@@ -737,6 +737,7 @@ img.product {
   position: relative;
   z-index: 15;
   padding: 30px 0 70px;
+  overflow-x: clip;
 }
 
 .section-5-img-up {
@@ -760,6 +761,8 @@ img.product {
 
 .sect-5-wrapper {
   max-width: 540px;
+  position: relative;
+  z-index: 11;
 }
 
 .sect-5-wrapper-title {
@@ -787,9 +790,11 @@ img.product {
 
 .sect-5-pear-wrapper {
   position: absolute;
-  width: 36%;
-  right: 7%;
-  bottom: -17%;
+  width: 40%;
+  max-width: 675px;
+  right: 10%;
+  bottom: 0%;
+  transform: translateY(10%);
 }
 
 .sect-5-pear-block {
@@ -859,13 +864,13 @@ img.product {
   top: 61%;
   z-index: 9;
   transform-origin: 0% 5%;
-  animation:  handMov 2s ease-in-out infinite alternate;
+  animation: handMov 2s ease-in-out infinite alternate;
 }
 
 
 /* ---------------section-6---------------------- */
 
-.section-6{
+.section-6 {
   position: relative;
   height: 20vh;
   background: #FFF6EE;
@@ -1103,6 +1108,7 @@ img.product {
   from {
     transform: rotate(0deg) translateX(50%) rotate(0deg);
   }
+
   to {
     transform: rotate(200deg) translateX(50%) rotate(-200deg);
   }
@@ -1113,6 +1119,7 @@ img.product {
   0% {
     transform: scaleY(1);
   }
+
   100% {
     transform: scaleY(-1);
   }

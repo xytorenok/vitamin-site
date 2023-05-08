@@ -6,6 +6,10 @@ window.onscroll = () => {
       block.classList.add('active')
     }
   }
+  if (pearSpeechBtn.getBoundingClientRect().top <= innerHeight) {
+
+  }
+  
 }
 
 
@@ -155,7 +159,7 @@ function rollNextProduct(){
   nextBtn.classList.add('btn-active');
 }
 
-// ---------------section-6----------------------
+// ---------------section-5----------------------
 
 pearSpeechBtn.onclick = () => {
   speech.play()
